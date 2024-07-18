@@ -1,0 +1,32 @@
+plugins {
+    id 'java-library'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    api platform(libs.deephaven.bom)
+    api libs.deephaven.engine.api
+    implementation libs.deephaven.engine.table
+
+    testImplementation libs.deephaven.engine.test.utils
+    testRuntimeOnly libs.deephaven.test.configs
+    testRuntimeOnly libs.deephaven.log.to.slf4j
+    testRuntimeOnly libs.logback.classic
+
+    testImplementation libs.junit.jupiter
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+    systemProperty 'Configuration.rootFile', 'dh-tests.prop'
+}

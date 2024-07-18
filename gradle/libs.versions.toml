@@ -1,5 +1,17 @@
 [versions]
+deephaven = "0.35.0"
+logback = "1.5.6"
 junit-jupiter = "5.10.2"
 
 [libraries]
+deephaven-bom = { module = "io.deephaven:deephaven-bom", version.ref = "deephaven" }
+deephaven-engine-api = { module = "io.deephaven:deephaven-engine-api" }
+deephaven-engine-table = { module = "io.deephaven:deephaven-engine-table" }
+
+deephaven-engine-test-utils = { module = "io.deephaven:deephaven-engine-test-utils" }
+deephaven-test-configs = { module = "io.deephaven:deephaven-test-configs" }
+deephaven-log-to-slf4j = { module = "io.deephaven:deephaven-log-to-slf4j" }
+
+logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit-jupiter" }

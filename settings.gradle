@@ -4,3 +4,4 @@ plugins {
 
 rootProject.name = 'deephaven-extra-classpath'
 include('my-simple-library')
+include('my-deephaven-library')

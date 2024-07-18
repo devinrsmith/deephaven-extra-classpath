@@ -18,6 +18,7 @@ For advanced integrators who need to control the full classpath, see [deephaven-
 ```bash
 docker buildx build \
   --build-context my-simple-library=my-simple-library/build/libs \
+  --build-context my-deephaven-library=my-deephaven-library/build/libs \
   --tag deephaven/server-extra-classpath \
   --load \
   .
@@ -38,7 +39,7 @@ docker run \
 This is simple, standalone code that doesn't have any external dependencies, nor dependencies on Deephaven. It is the
 simplest case for packaging and adding to the Deephaven classpath.
 
-## my-deephaven-library (TBD)
+## my-deephaven-library
 
 This is an example library that depends on Deephaven, but doesn't have any other external dependencies. This is also
 simple for packaging and adding to the Deephaven classpath.
