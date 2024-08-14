@@ -1,7 +1,7 @@
 [versions]
 deephaven = "0.35.1"
 logback = "1.5.6"
-junit-jupiter = "5.10.3"
+junit-jupiter = "5.11.0"
 
 [libraries]
 deephaven-bom = { module = "io.deephaven:deephaven-bom", version.ref = "deephaven" }
