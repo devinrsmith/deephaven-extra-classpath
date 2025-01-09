@@ -1,5 +1,5 @@
 [versions]
-deephaven = "0.37.1"
+deephaven = "0.37.2"
 logback = "1.5.12"
 junit-jupiter = "5.11.4"
 
