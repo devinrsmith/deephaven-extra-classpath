@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1.4
-FROM ghcr.io/deephaven/server:0.39.5
+FROM ghcr.io/deephaven/server:0.40.5
 
 # By default, Deephaven sources additional jars from /apps/libs/
 # See https://deephaven.io/core/docs/how-to-guides/configuration/docker-application/
