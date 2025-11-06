@@ -1,6 +1,6 @@
 [versions]
 deephaven = "0.40.5"
-logback = "1.5.19"
+logback = "1.5.20"
 junit-jupiter = "5.13.4"
 
 [libraries]
